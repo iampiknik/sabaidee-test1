@@ -59,3 +59,10 @@ scripts/test-parse-daily-cash.ts      — รัน parser กับไฟล์
 2. ต่อ IndexedDB layer (แนะนำ `idb` package) ตาม schema ที่มี
 3. ออกแบบหน้า "นำเข้าข้อมูล" ให้รองรับการแก้ไขวันที่ผิดปกติทีละแถว/เป็นชุด ตามที่เจอจริง
 4. เริ่มหน้าจอ "ภาพรวมกิจการ" เป็นหน้าแรก
+
+## Deploy ขึ้น GitHub Pages
+
+มี `.github/workflows/deploy.yml` เตรียมไว้แล้ว build อัตโนมัติทุกครั้งที่ push เข้า branch `main`
+และตั้ง `--base` ให้ตรงกับชื่อ repo อัตโนมัติ (ยกเว้น repo ชื่อ `<username>.github.io` ให้แก้เป็น `--base=/`)
+ดูขั้นตอนละเอียดในแชทที่คุยกัน หรือถามซ้ำได้ทุกเมื่อ
+
